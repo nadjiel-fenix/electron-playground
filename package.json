@@ -1,20 +1,43 @@
 {
-  "name": "electron-playground",
-  "version": "0.1.0",
-  "main": "main.js",
-  "type": "module",
+  "name": "electron-forge-playground",
+  "productName": "electron-forge-playground",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".vite/build/main.js",
+  "private": true,
   "scripts": {
-    "dev": "electron .",
-    "prebuild": "rimraf dist",
-    "build": "electron-builder"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "nadjiel-fenix",
+    "email": "daniel@fenixtecnologia.info"
+  },
   "license": "MIT",
-  "description": "",
   "devDependencies": {
-    "electron": "^40.6.0",
-    "electron-builder": "^26.8.1",
-    "rimraf": "^6.1.3"
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.1",
+    "@electron-forge/maker-rpm": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron-forge/plugin-vite": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "electron": "40.6.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-import": "^2.32.0",
+    "typescript": "~4.5.4",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
   }
 }
