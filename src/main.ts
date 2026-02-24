@@ -68,6 +68,7 @@ app.on("window-all-closed", () => {
 
 app.setLoginItemSettings({
   openAtLogin: true,
+  path: process.execPath,
 });
 
 app.on("activate", () => {
