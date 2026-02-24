@@ -1,13 +1,5 @@
-const title = document.querySelector("#title");
+const greetingInput = document.querySelector("#greeting");
 
-function randomizeColor() {
-  const r = Math.floor(Math.random() * 255);
-  const g = Math.floor(Math.random() * 255);
-  const b = Math.floor(Math.random() * 255);
-
-  return `rgb(${r}, ${g}, ${b})`;
-}
-
-setInterval(() => {
-  title.style.color = randomizeColor();
-}, 1000);
+greetingInput.addEventListener("change", (e) => {
+  window.api.saveGreeting(e.target.value);
+});
