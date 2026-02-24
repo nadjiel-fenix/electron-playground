@@ -1,0 +1,16 @@
+{
+  "name": "electron-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "electron": "^40.6.0"
+  }
+}
